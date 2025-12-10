@@ -3,6 +3,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 
 import 'translator_screen.dart';
 import 'audio_translator_screen.dart';
+import 'education_screen.dart'; // <-- NEW SCREEN
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,7 +15,7 @@ class HomeScreen extends StatelessWidget {
     return Scaffold(
       backgroundColor: Colors.blueGrey[50],
       appBar: AppBar(
-        title: const Text("ASL Translator Home"),
+        title: const Text("ASL App Home"),
         actions: [
           IconButton(
             icon: const Icon(Icons.logout),
@@ -95,7 +96,25 @@ class HomeScreen extends StatelessWidget {
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(double.infinity, 50),
                 ),
-                label: const Text("Audio -> ASL Translator"),
+                label: const Text("Audio to Text"),
+              ),
+
+              const SizedBox(height: 16),
+
+              ElevatedButton.icon(
+                onPressed: () {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(
+                      builder: (_) => const EducationScreen(),
+                    ),
+                  );
+                },
+                icon: const Icon(Icons.school),
+                style: ElevatedButton.styleFrom(
+                  minimumSize: const Size(double.infinity, 50),
+                ),
+                label: const Text("Learn About ASL & Hearing Disabilities"),
               ),
 
               const SizedBox(height: 20),

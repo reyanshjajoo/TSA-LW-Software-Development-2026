@@ -21,7 +21,7 @@ class _LoginScreenState extends State<LoginScreen> {
         password: passwordController.text.trim(),
       );
 
-      // SUCCESS → go to home
+      // SUCCESS -> go to home
       Navigator.pushReplacementNamed(context, "/home");
     } catch (e) {
       setState(() {
