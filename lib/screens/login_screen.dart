@@ -33,13 +33,13 @@ class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: const Color.fromARGB(255, 122, 217, 168),
       body: Center(
         child: Container(
           padding: const EdgeInsets.all(24),
           width: 350,
           decoration: BoxDecoration(
-            color: Colors.white,
+           color: const Color.fromARGB(255, 60, 120, 88),
             borderRadius: BorderRadius.circular(16),
             boxShadow: const [
               BoxShadow(
@@ -57,6 +57,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 style: TextStyle(
                   fontSize: 28,
                   fontWeight: FontWeight.bold,
+                  color: Color.fromARGB(255, 255, 255, 255)
                 ),
               ),
 
@@ -66,6 +67,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 controller: emailController,
                 decoration: const InputDecoration(
                   labelText: "Email",
+                  hoverColor: Color.fromARGB(255, 77, 105, 90),
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -77,6 +79,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 obscureText: true,
                 decoration: const InputDecoration(
                   labelText: "Password",
+                  hoverColor: Color.fromARGB(255, 156, 230, 190),
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -96,7 +99,7 @@ class _LoginScreenState extends State<LoginScreen> {
                 style: ElevatedButton.styleFrom(
                   minimumSize: const Size(double.infinity, 48),
                 ),
-                child: const Text("Login"),
+                child: const Text("Login")
               ),
 
               const SizedBox(height: 10),
