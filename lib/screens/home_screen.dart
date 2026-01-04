@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
     final user = FirebaseAuth.instance.currentUser;
 
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: const Color.fromARGB(255, 122, 217, 168),
       appBar: AppBar(
         title: const Text("ASL App Home"),
         actions: [
@@ -31,7 +31,7 @@ class HomeScreen extends StatelessWidget {
           padding: const EdgeInsets.all(24),
           width: 400,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: const Color.fromARGB(255, 60, 120, 88),
             borderRadius: BorderRadius.circular(16),
             boxShadow: const [
               BoxShadow(
@@ -59,7 +59,7 @@ class HomeScreen extends StatelessWidget {
                 user != null ? "Signed in as: ${user.email}" : "Not signed in",
                 style: const TextStyle(
                   fontSize: 14,
-                  color: Colors.grey,
+                  color: Color.fromARGB(255, 9, 43, 15),
                 ),
               ),
 

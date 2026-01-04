@@ -32,13 +32,13 @@ class _RegisterScreenState extends State<RegisterScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: const Color.fromARGB(255, 122, 217, 168),
       body: Center(
         child: Container(
           padding: const EdgeInsets.all(24),
           width: 350,
           decoration: BoxDecoration(
-            color: Colors.white,
+            color: const Color.fromARGB(255, 60, 120, 88),
             borderRadius: BorderRadius.circular(16),
             boxShadow: const [
               BoxShadow(
@@ -62,6 +62,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 controller: emailController,
                 decoration: const InputDecoration(
                   labelText: "Email",
+                  hoverColor: Color.fromARGB(255, 156, 230, 190),
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -73,6 +74,7 @@ class _RegisterScreenState extends State<RegisterScreen> {
                 obscureText: true,
                 decoration: const InputDecoration(
                   labelText: "Password",
+                  hoverColor: Color.fromARGB(255, 156, 230, 190),
                   border: OutlineInputBorder(),
                 ),
               ),
@@ -87,7 +89,8 @@ class _RegisterScreenState extends State<RegisterScreen> {
               ElevatedButton(
                 onPressed: handleRegister,
                 style: ElevatedButton.styleFrom(
-                  minimumSize: const Size(double.infinity, 48),
+                  minimumSize: const Size(double.infinity, 48)
+                   
                 ),
                 child: const Text("Sign Up"),
               ),

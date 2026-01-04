@@ -28,7 +28,7 @@ class _AudioTranslatorScreenState extends State<AudioTranslatorScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.blueGrey[50],
+      backgroundColor: const Color.fromARGB(255, 122, 217, 168),
       appBar: AppBar(
         title: const Text("Audio to Text"),
       ),
@@ -39,7 +39,7 @@ class _AudioTranslatorScreenState extends State<AudioTranslatorScreen> {
             width: 700,
             padding: const EdgeInsets.all(24),
             decoration: BoxDecoration(
-              color: Colors.white,
+              color: const Color.fromARGB(255, 60, 120, 88),
               borderRadius: BorderRadius.circular(16),
               boxShadow: const [
                 BoxShadow(
@@ -70,12 +70,12 @@ class _AudioTranslatorScreenState extends State<AudioTranslatorScreen> {
                     width: isListening ? 160 : 140,
                     decoration: BoxDecoration(
                       color:
-                          isListening ? Colors.red[300] : Colors.blueGrey[200],
+                          isListening ? const Color.fromARGB(255, 9, 173, 31) : Colors.blueGrey[200],
                       shape: BoxShape.circle,
                       boxShadow: [
                         BoxShadow(
                           color: isListening
-                              ? Colors.redAccent
+                              ? const Color.fromARGB(255, 5, 68, 18)
                               : Colors.black12,
                           blurRadius: isListening ? 25 : 10,
                           spreadRadius: isListening ? 4 : 1,
@@ -109,7 +109,7 @@ class _AudioTranslatorScreenState extends State<AudioTranslatorScreen> {
                     width: double.infinity,
                     padding: const EdgeInsets.all(16),
                     decoration: BoxDecoration(
-                      color: Colors.grey[100],
+                      color: const Color.fromARGB(255, 60, 120, 88),
                       borderRadius: BorderRadius.circular(12),
                     ),
                     child: SingleChildScrollView(
